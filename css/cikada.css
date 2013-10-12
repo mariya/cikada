@@ -1,0 +1,92 @@
+/* 
+TODO: SCALE FOR OTHER BROWSER SIZES;
+
+Uses 
+Extra small devices (phones, up to 480px)
+Small devices (tablets, 768px and up)
+Medium devices (desktops, 992px and up)
+Large devices (large desktops, 1200px and up)
+
+@media (min-width: 768px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1200px) {
+  .container {
+    background-color: blue;
+  }
+}
+*/
+
+.container .banner-container {
+  background-color: #1c4302;
+  border-bottom: 1px solid #9f9f9f;
+  height: 410px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.container .banner-container .banner-image {
+  background: url('images/banner-xs.jpg') top left no-repeat transparent;
+  height: 410px;
+  -moz-opacity: 0.25;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=25);
+  opacity: 0.25;
+  z-index: 2;
+}
+
+.container .banner-container .logo-background {
+  background-color: #000;
+  height: 80px;
+  -moz-opacity: 0.50;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=50);
+  opacity: 0.50;
+  z-index: 3;
+  position: relative;
+  top: -410px;
+}
+
+.container .banner-container .banner-overlay {
+  height: 410px;
+  z-index: 4;
+  position: relative;
+  top: -490px;
+}
+
+.container .banner-container .banner-overlay a.logo {
+  background: url('images/logo-xs.png') top left no-repeat transparent;
+  display: block;
+  height: 60px;
+  margin: 10px 15px;
+  width: 263px;
+}
+
+.container .banner-container .banner-overlay p {
+  color: #fff;
+}
+
+.container .content {
+  background-color: #e6e6e6;
+  border-bottom: 1px solid #9f9f9f;
+  border-top: 1px solid #fff;
+}
+
+.container .footer {
+  background-color: #cbcbcb;
+  border-top: 1px solid #fff;
+}
+
+
+/*PUT POSITIONS HERE SO THEY ARE EASIER TO OVERRIDE */
+
+
+
+
