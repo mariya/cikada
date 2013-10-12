@@ -26,6 +26,10 @@ Large devices (large desktops, 1200px and up)
 }
 */
 
+.container {
+  padding: 0px;
+}
+
 .container .banner-container {
   background-color: #1c4302;
   border-bottom: 1px solid #9f9f9f;
@@ -55,7 +59,7 @@ Large devices (large desktops, 1200px and up)
 }
 
 .container .banner-container .banner-overlay {
-  height: 410px;
+  height: 430px;
   z-index: 4;
   position: relative;
   top: -490px;
@@ -69,14 +73,36 @@ Large devices (large desktops, 1200px and up)
   width: 263px;
 }
 
-.container .banner-container .banner-overlay p {
+.container .banner-container .banner-overlay .quote {
+  bottom: 0px;
   color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  height: 180px;
+  margin-left: 20px;
+  position: absolute;
+  width: 290px;
 }
 
 .container .content {
   background-color: #e6e6e6;
   border-bottom: 1px solid #9f9f9f;
   border-top: 1px solid #fff;
+  padding: 0 20px;
+}
+
+.container .content h1 {
+  color: #444;
+  font-size: 1.875em;
+  line-height: 1.125em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container .content p {
+  color: #000;
+  font-size: 0.875em;
+  line-height: 1.125em;
 }
 
 .container .footer {
