@@ -26,6 +26,13 @@ Large devices (large desktops, 1200px and up)
 }
 */
 
+::selection {
+  background: #ddd; /* Safari */
+}
+::-moz-selection {
+  background: #ddd; /* Firefox */
+}
+
 .container {
   padding: 0px;
 }
@@ -71,15 +78,18 @@ Large devices (large desktops, 1200px and up)
 }
 
 .container .banner-container .banner-overlay .quote {
-  bottom: 0px;
   color: #fff;
-  display: none; /* Unhide when we replace image with textless one */
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: bold;
   height: 180px;
-  margin-left: 20px;
   position: absolute;
-  width: 290px;
+  bottom: 70px;
+  width: 100%;
+}
+
+.container .banner-container .banner-overlay .quote .text {
+  margin: auto;
+  width: 590px;
 }
 
 .container .content {
