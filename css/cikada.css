@@ -68,9 +68,9 @@ Large devices (large desktops, 1200px and up)
 .container .banner-container .banner-overlay a.logo {
   background: url('images/logo-xs.png') top left no-repeat transparent;
   display: block;
-  height: 60px;
-  margin: 10px 15px;
-  width: 263px;
+  height: 52px;
+  margin: 15px 15px;
+  width: 225px;
 }
 
 .container .banner-container .banner-overlay .quote {
