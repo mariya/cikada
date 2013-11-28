@@ -33,17 +33,14 @@ Large devices (large desktops, 1200px and up)
 .container .banner-container {
   background-color: #1c4302;
   border-bottom: 1px solid #9f9f9f;
-  height: 410px;
+  height: 348px; /* The height of the banner */
   overflow: hidden;
   z-index: 1;
 }
 
 .container .banner-container .banner-image {
   background: url('images/banner-xs.jpg') top left no-repeat transparent;
-  height: 410px;
-  -moz-opacity: 0.25;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=25);
-  opacity: 0.25;
+  height: 348px; /* The height of the banner */
   z-index: 2;
 }
 
@@ -55,14 +52,14 @@ Large devices (large desktops, 1200px and up)
   opacity: 0.50;
   z-index: 3;
   position: relative;
-  top: -410px;
+  top: -348px; /* The height of the banner */
 }
 
 .container .banner-container .banner-overlay {
   height: 430px;
   z-index: 4;
   position: relative;
-  top: -490px;
+  top: -428px; /* The height of the banner + 80 */
 }
 
 .container .banner-container .banner-overlay a.logo {
@@ -76,6 +73,7 @@ Large devices (large desktops, 1200px and up)
 .container .banner-container .banner-overlay .quote {
   bottom: 0px;
   color: #fff;
+  display: none; /* Unhide when we replace image with textless one */
   font-size: 1.5em;
   font-weight: bold;
   height: 180px;
