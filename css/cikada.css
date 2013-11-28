@@ -26,6 +26,13 @@ Large devices (large desktops, 1200px and up)
 }
 */
 
+::selection {
+  background: #ddd; /* Safari */
+}
+::-moz-selection {
+  background: #ddd; /* Firefox */
+}
+
 .container {
   padding: 0px;
 }
@@ -33,17 +40,14 @@ Large devices (large desktops, 1200px and up)
 .container .banner-container {
   background-color: #1c4302;
   border-bottom: 1px solid #9f9f9f;
-  height: 410px;
+  height: 348px; /* The height of the banner */
   overflow: hidden;
   z-index: 1;
 }
 
 .container .banner-container .banner-image {
   background: url('images/banner-xs.jpg') top left no-repeat transparent;
-  height: 410px;
-  -moz-opacity: 0.25;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=25);
-  opacity: 0.25;
+  height: 348px; /* The height of the banner */
   z-index: 2;
 }
 
@@ -55,33 +59,37 @@ Large devices (large desktops, 1200px and up)
   opacity: 0.50;
   z-index: 3;
   position: relative;
-  top: -410px;
+  top: -348px; /* The height of the banner */
 }
 
 .container .banner-container .banner-overlay {
   height: 430px;
   z-index: 4;
   position: relative;
-  top: -490px;
+  top: -428px; /* The height of the banner + 80 */
 }
 
 .container .banner-container .banner-overlay a.logo {
   background: url('images/logo-xs.png') top left no-repeat transparent;
   display: block;
-  height: 60px;
-  margin: 10px 15px;
-  width: 263px;
+  height: 52px;
+  margin: 15px 15px;
+  width: 225px;
 }
 
 .container .banner-container .banner-overlay .quote {
-  bottom: 0px;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: bold;
   height: 180px;
-  margin-left: 20px;
   position: absolute;
-  width: 290px;
+  bottom: 70px;
+  width: 100%;
+}
+
+.container .banner-container .banner-overlay .quote .text {
+  margin: auto;
+  width: 590px;
 }
 
 .container .content {
@@ -117,7 +125,7 @@ Large devices (large desktops, 1200px and up)
 .container .footer ul {
   margin: 0 auto;
   padding: 50px 0 30px 0;
-  width: 150px;
+  width: 165px;
 }
 
 .container .footer ul.social li {
@@ -127,7 +135,7 @@ Large devices (large desktops, 1200px and up)
 
 .container .footer ul.social li a {
   display: block;
-  width: 48px;
+  width: 55px;
   height: 48px;
 }
 
@@ -146,7 +154,7 @@ Large devices (large desktops, 1200px and up)
 
 .container .footer .logo {
   background: url('images/icons/cikada.png') top left no-repeat transparent;
-  width: 49px;
+  width: 50px;
   height: 67px;
   margin: auto;
 }
