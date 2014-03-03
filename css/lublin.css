@@ -1,33 +1,49 @@
-/* Default is the 1024 image */
+/* Default is 1024px */
 body {
+  background-color: #e6e6e6;
+}
+
+body > header {
   background: transparent url('images/img-main-1024.png') top center no-repeat;
+  border-bottom: 1px solid white;
+  height: 602px;
 }
 
 @media (min-width: 0px) and (max-width: 320px)  {
-  body {
+  body > header {
     background-image: url('images/img-main-320.png');
+    height: 410px;
   }
 }
 
 @media (min-width: 321px) and (max-width: 480px)  {
-  body {
+  body > header {
     background-image: url('images/img-main-480.png');
+    height: 410px;
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px)  {
-  body {
+  body > header {
     background-image: url('images/img-main-768.png');
+    height: 500px;
   }
 }
 
 @media (min-width: 1025px) {
-  body {
+  body > header {
     background-image: url('images/img-main-1024-bigger.png');
+    height: 602px;
   }
 }
 
-body > header {
+body > header > .logo-background {
   background-color: #071100;
   height: 80px;
+}
+
+body > header .logo {
+  background: transparent url('images/logo-main.png') left center no-repeat;
+  height: 80px;
+  width: 92px;
 }
