@@ -1,0 +1,33 @@
+/* Default is the 1024 image */
+body {
+  background: transparent url('images/img-main-1024.png') top center no-repeat;
+}
+
+@media (min-width: 0px) and (max-width: 320px)  {
+  body {
+    background-image: url('images/img-main-320.png');
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px)  {
+  body {
+    background-image: url('images/img-main-480.png');
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px)  {
+  body {
+    background-image: url('images/img-main-768.png');
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    background-image: url('images/img-main-1024-bigger.png');
+  }
+}
+
+body > header {
+  background-color: #071100;
+  height: 80px;
+}
