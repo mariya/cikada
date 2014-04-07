@@ -54,8 +54,12 @@ body > header > .logo-background {
 
 body > header > .logo-background .logo {
   background: transparent url('images/logo-main.png') left center no-repeat;
+  color: white;
+  font-size: 2em;
   height: 80px;
-  width: 92px;
+  line-height: 85px;
+  padding-left: 60px;
+  text-transform: uppercase;
 }
 
 /* Default is 1024px */
@@ -156,8 +160,8 @@ body > footer .container > div {
 
 body > footer .logo {
   background: transparent url('images/logo-footer.png') left center no-repeat;
-  height: 19px;
-  width: 180px;
+  height: 116px;
+  width: 116px;
 }
 
 body > footer .copyright {
